@@ -4,9 +4,9 @@
 int main() {
 
     
-    float a,b,d;
-    int c;
-    printf("1 for multiplication, 2 for division, 3 for sum , 4 for difference , 0 for exit \n ");
+    float a,b,d,e,f;
+    int c=-7;
+    printf("1 for multiplication\n, 2 for division\n, 3 for sum\n , 4 for difference\n 5 square\n 6 for cube \n ,7 log base 10 \n , 0 for exit \n ");
     printf("Enter first number: ");
     scanf("%f",&a);
     printf("Enter second number: ");
@@ -24,7 +24,7 @@ int main() {
     }
     else if(c == 2){
         d = a/b;
-        printf("The quotient is %f\n", d);
+        printf("The division is %f\n", d);
         
     }
     else if(c == 3){
@@ -36,6 +36,25 @@ int main() {
         d = a-b;
         printf("The difference is %f\n", d);
         
+    }
+    else if(c==5){
+        printf("Square of %f is %f\n",a,sqrt(a));
+        printf("Square of %f is %f",b,sqrt(b));
+
+    }
+    else if(c==6){
+        printf("Cube of %f is %f\n",a,cbrt(a));
+        printf("cube of %f is %f\n",a,cbrt(b));
+
+    }
+    else if(c==7){
+        printf("log  of %f is %f\n",a,log10(a));
+        printf("log  of %f is %f\n",a,log10(b));
+
+    }
+    
+    else {
+        printf("Enter valid choice  ! \n ");
     }
 }
 }
